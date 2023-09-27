@@ -1,0 +1,11 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>{{project.title}}</title>
+{% endblock %}
+{% block content %}
+<img src="{{ project.image.url }}" alt="Movie recommendation chatbot project">
+<h1>{{project.title}}</h1>
+<p>{{project.technology}}</p>
+{% endblock %}
